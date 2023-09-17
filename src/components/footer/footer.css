@@ -1,0 +1,39 @@
+/*footer*/
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 200;
+  }
+  .footer,
+  .footer a {
+    color: var(--netflix-gray-color);
+    font-size: 0.9rem;
+    font-size: var(--fs-sm);
+  }
+  .footer p {
+    margin-bottom: 1.5rem;
+    /* text-align: center; */
+  }
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .footer li {
+    line-height: 1.9;
+  }
+
+@media screen  and (min-width: 40em){
+    .footer{
+        text-align: left;
+    }
+    .footer .footer-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen  and (min-width: 80em){
+    .footer .footer-cols{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

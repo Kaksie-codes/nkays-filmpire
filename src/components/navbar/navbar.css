@@ -1,0 +1,162 @@
+nav{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+}
+nav.nav__black{
+    background: #000;
+}
+.nav__container{    
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.nav__container .nav__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.mobile__toggle{
+    display: none;
+}
+.nav__links li a{
+    color: #fff;
+    text-shadow: 2px 2px rgba(51, 51, 51, 0.5);
+}
+.nav__container .nav__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.nav__container .nav__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    padding: 0 1rem;
+    border-radius: 10px;    
+}
+.searchbox .search-icon{
+    color: var(--netflix-gray-color);
+    position: relative;
+    z-index: 300;
+}
+.nav__search .searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.searchbox input{
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: var(--fs-sm);
+    padding: 8px;    
+}
+.searchbox input:focus {
+    border-bottom: none;
+    
+}
+.icons .icon{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.nav__container .settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+.settings .icon.rotate{
+    transform: rotate(180deg);
+    transition: all 300ms ease;
+}
+.nav__container .settings .account__menu{
+    position: absolute;
+    top: 130%;
+    right: 0;
+    border: 1px solid var(--netflix-gray-color);
+    background: var(--netflix-dark-color);
+    width: 250px;
+    text-align: center;
+}
+.account__menu .account__menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    border-bottom: 1px solid var(--netflix-gray-color);
+}
+.account__menu p{
+    padding: 0.625rem 1.25rem;
+}
+.account__menu-top .avatar{
+    width: 30px;
+}
+.nav__container .icon{
+    color: #fff;
+}
+
+.avatar{
+    width: 36px;
+}
+
+@media screen  and (max-width: 80em){
+    .nav__links{
+        position: absolute;
+        flex-direction: column;
+        background: var(--netflix-dark-color);
+        top: 5.1rem;
+        right: 10px;
+        width: min(1400px 80%);
+        padding: 20px 0;        
+    }
+    .nav__links.hide{
+        display: none;
+    }
+    .nav__links li a{
+        padding:10px 20px;
+    }
+    .nav__links li a:hover{
+        opacity: 0.5;
+    }
+    .mobile__toggle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        gap: 0.8rem;;
+    }
+    .nav__container .icon{
+        display: none;
+    }
+    .mobile__toggle ._icon{
+        color: #fff;
+        display: block;
+        position: unset;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+   .nav__right .nav__search{
+       display: none;
+   }
+   .searchbox{
+       display: none;
+   }
+}

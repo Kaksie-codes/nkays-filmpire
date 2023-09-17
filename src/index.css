@@ -1,0 +1,172 @@
+:root{
+  /* colors */
+  --netflix-primary-color: #e50914;
+  --netflix-dark-color: #141414;
+  --netflix-gray-color: #999;
+  --netflix-golden-color: #ffa00a;
+
+  /* font-sizing */
+  --fs-xl: 2rem;
+  --fs-lg: 1.625rem;
+  --fs-md: 1.375rem;
+  --fs-sm: 1rem;
+
+}
+/****Scrollbar type*****/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--netflix-primary-color);
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-track {  
+  background: #000;
+}
+/* Small Tablet */
+@media screen  and (min-width: 40em){
+  :root{
+      --fs-xl: 2rem;
+      --fs-lg: 1.625rem;
+      --fs-md: 1.375rem;
+      --fs-sm: 1rem;
+  }
+}
+
+/* Large Tablet */
+@media screen  and (min-width: 48em){
+  :root{
+      --fs-xl: 2.5rem;
+      --fs-lg: 2rem;
+      --fs-md: 1.5rem;
+      --fs-sm: 1rem;
+  }
+}
+
+/* Desktop */
+@media screen  and (min-width: 80em){
+  :root{
+      --fs-xl: 3.2rem;
+      --fs-lg: 2.25rem;
+      --fs-md: 1.75rem;
+      --fs-sm: 1.125rem;
+  }
+}
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--netflix-gray-color);
+  background: #000;
+  font-size: 16px;    
+}
+.container{
+  width: 90%;    
+  margin-inline: auto;    
+}
+.container__small{
+  width: 90%;    
+  margin-inline: auto;  
+}
+.container__tiny{
+  width: 90%;    
+  margin-inline: auto;  
+}
+.logo{
+  cursor: pointer;
+}
+@media screen  and (min-width: 40em){
+  .container__small{
+      width: 70%;
+  }
+  .container__tiny{
+      width: 60%;
+  }
+}
+.text-center{
+  text-align: center;
+}
+
+.logo svg{
+  fill: var(--netflix-primary-color);
+  height: 30px;
+}
+
+h1,
+h2,
+h3{
+color: #fff;
+}
+h1{
+  font-size: var(--fs-xl);
+  font-weight: 600;  
+  line-height: 1.1; 
+}
+h2{
+  font-size: var(--fs-lg);
+}
+h3{
+  font-size: var(--fs-md);
+  font-weight: 400;  
+line-height: 1.25;
+}
+p {
+  /* margin: 0.5rem 0; */
+  font-size: var(--fs-sm);
+}
+img {
+  width: 100%;
+  display: block;
+}
+/*Buttons*/
+.btn {
+  display: inline-block;
+  background: var(--netflix-primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: var(--fs-sm);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  /* margin-right: 0.5rem; */
+  border-radius: 2px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+.btn-xl {
+  padding: 1.5rem 2.1rem;
+  text-transform: uppercase;
+  font-size: var(--fs-lg);
+}
+.btn-large {
+  padding: 0.65rem 1.3rem;    
+  font-size: var(--fs-md);
+  min-height: 40px;
+}
+.bold{
+  font-weight: 500;
+}
+
+@media screen  and (min-width: 48em){
+  .logo svg{
+      height: 37px;
+  }
+}

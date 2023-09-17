@@ -1,0 +1,13 @@
+.tabs{
+    background: var(--netflix-dark-color);
+    padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+.tabs__container{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 1rem;
+}

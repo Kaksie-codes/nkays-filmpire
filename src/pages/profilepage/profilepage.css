@@ -1,0 +1,58 @@
+/* ._avatar{
+    width: 40px;
+} */
+.profilepage{
+    height: 100vh;
+    color: #fff;
+}
+.profilepage__body{
+    width: min(80%, 600px);
+    display: flex;    
+    flex-direction: column;
+    padding-top: 8%;
+    margin-inline: auto;
+}
+.profilepage__body h2{
+    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #282c2d;
+    text-align: unset;
+}
+.profilepage__info{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+.profilepage__info ._avatar{
+    height: 100px;
+    width: 50px;
+    /* overflow: hidden; */
+}
+.profilepage__details{
+    flex: 1;
+}
+.profilepage__details .btn-wide{
+    padding: 10px 20px;   
+    width: 100%;    
+    margin-top: 0;
+    cursor: pointer;
+}
+.profilepage__details > h3{
+    border-bottom: none;
+    background: gray;
+    padding: 15px;
+    padding-left: 20px; 
+}
+.profilepage__plans h3{
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.profilepage__plans span{
+    color: var(--netflix-gray-color);
+}

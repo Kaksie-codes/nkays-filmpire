@@ -1,0 +1,163 @@
+.moviespage{
+    /* position: relative; */
+    width: 100vw;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+}
+.moviespage .banner{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    color: #fff;
+}
+.moviespage .banner .category{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.category select{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+.banner__contents{
+    padding-left: 30px;
+    padding-top: 140px;
+    height: 190px;    
+    height: 100%;
+}
+.banner__contents h1{
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 2px 2px rgba(51, 51, 51, 0.5);
+}
+.banner__contents p{
+    max-width: 500px;
+    padding-top: 1rem;
+    height: 80px;
+    position: relative;
+    z-index: 5;
+    text-shadow: 2px 2px rgba(51, 51, 51, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.moviespage .footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.banner--fadebottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+    /* height: 7.4rem; */
+    /* height: 10rem; */
+    height: 50%;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37,0.61), rgb(3, 3, 3));
+}
+.banner__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.banner__button{
+    cursor: pointer;
+    
+    color: #000;
+    border: none;
+    font-weight: 600;    
+    padding: 0.65rem 1.3rem;    
+    font-size: var(--fs-md);
+    min-height: 40px;
+    
+    background: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.banner__button:hover{    
+    color: #fff;    
+    background: rgba(51, 51, 51, 0.5);
+    transition: all 0.2s;
+}
+.banner__button.inverse{
+    color: #fff;
+    background: rgba(51, 51, 51, 0.5);
+}
+.banner__button.inverse:hover{
+    background: #e6e6e6;
+    color: #000;
+}
+.movies__collection{    
+    position: absolute;    
+    top: 68vh;
+    width: 100%;    
+    z-index: 10;
+    margin-inline: auto;
+    overflow: hidden;
+}

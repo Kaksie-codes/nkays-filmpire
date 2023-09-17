@@ -1,0 +1,482 @@
+.homepage{
+  width: 100%;
+  position: relative; 
+}
+.homepage__topsection{
+  height: 100vh;
+  width: 100%;    
+  position: relative;
+  background: url("../../assets/Netflix_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage__topsection::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 100px 100px 250px #000000, inset -100px -100px 250px #000000;
+} 
+.nav{
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+  height: 5.6rem;
+}
+.nav__black{
+  background: black;
+}
+.nav__container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  position: relative;
+text-align: center;  
+z-index: 2;  
+display: grid;
+place-items: center; 
+height: 100vh;
+}
+.content h1{
+  font-weight: 600;  
+line-height: 1.1;  
+margin-bottom: 1rem;
+max-width: 640px;
+margin-inline: auto;
+}
+.content h3{
+font-weight: 400;  
+line-height: 1.25;
+margin-bottom: 1rem;
+}
+.content p{
+  color: #fff;
+  font-weight: 400;  
+  line-height: 1.25;
+  margin: 1rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+form div{
+    width: 100%;
+}
+
+form input {
+  padding: 15px;    
+  font-size: var(--fs-sm);
+  width: 100%;
+  flex: 1;
+  border: none;
+  border-radius: 2px;       
+} 
+
+form span {
+  position: absolute;
+  left: 12px;
+  top: 12px;    
+  color: var(--netflix-gray-color);
+  z-index: 3;
+  transition: all 0.15s ease;
+  pointer-events: none;
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+form input:focus + span {
+  top: 3px;
+  font-size: 0.8rem;
+}
+  
+form input:focus {
+  border-bottom: 2px solid var(--netflix-golden-color);
+  
+}
+/* form input.has-value + span{
+  top: 3px;
+  font-size: 0.8rem;
+}
+form input.has-value{
+  border-bottom: 2px solid var(--netflix-golden-color);
+} */
+
+.tabs__container{
+  width: 90%;
+  margin-inline: auto;
+}
+.tabs .top{
+  background: var(--netflix-dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+  width: 100%;
+}
+.top .tabs__top-container{
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
+justify-content: center;
+text-align: center;
+grid-gap: 1rem;
+}
+.tabs p {
+  font-size: var(--fs-sm);  
+  color: var(--netflix-gray-color);   
+}
+.tabs__top-container> div {
+  padding: 1.5rem 0;
+}
+
+
+
+.tabs .top p{
+    display: none;
+}
+.tabs__top-container > div:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.tabs__top-container > div .icon{
+    width: 3rem;
+    height: 3rem;
+}
+.tab-border {
+  border-bottom: var(--netflix-primary-color) 4px solid;
+  color: #fff;
+}
+
+
+.tabs .bottom {
+  padding: 3rem 0;
+  background-color: #000;
+  color: #fff;
+  
+}
+
+.tabs .bottom .btn{      
+    margin: 0.8rem 0;
+}
+
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+padding-top: 1rem;
+display: none;
+}
+#tab-1-content.show,
+#tab-2-content.show,
+#tab-3-content.show{
+  display: block;
+}
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+}
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.table tbody tr td {
+  color: #999;
+  padding: 0.5rem;
+  /* padding: 0.8rem 1.2rem; */
+  text-align: center;
+}
+.table tbody tr td:first-child {
+  text-align: left;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #222;
+}
+
+.more-text .container{
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 46px;
+  padding: 70px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;    
+}
+  .more-text.special .container{
+      gap: 0;
+  }
+.more-text{
+  border-top: 8px solid #222;
+}
+.last {
+  border-bottom: 8px solid #222;
+}  
+.media {
+  position: relative;
+}
+.media .image{
+  width: 500px;
+  width: 100%;
+  z-index: 100;
+}
+.media video {    
+  width: 73%;
+  position: absolute;    
+  top: 55px;
+  left: 13.3%;
+  z-index: -1;    
+}
+.more-text  h1{
+  font-weight: 600;  
+line-height: 1.1;  
+margin-bottom: 1rem;
+/* display: none; */
+/* margin-bottom: 8px; */
+}
+.more-text h3{
+font-weight: 200;  
+/* opacity: 0.5; */
+/* font-weight: normal; */
+line-height: 1.25;
+margin-bottom: 1rem;
+}
+.our-story-card-animation {
+  padding: 0.35em 0.75em;
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.our-story-card-animation-image {
+  width: 47.5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+.text-1 {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: 400;
+}
+.text-0 {
+  color: #fff;
+  font-weight: 500;
+}
+/* img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+} */
+.our-story-card-animation {
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.our-story-card-animation-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+.our-story-card-animation-image img {
+  width: 100%;
+}
+.our-story-card-animation-custom {
+  height: 3.75em;
+  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif")
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+
+
+/* fAQs */
+.faqs {
+  padding: 70px 0;    
+}
+.faqs h2 {
+  text-align: center;
+}
+.faqs h3{      
+    font-weight: 200;
+}
+.faq {
+  width: 100%;
+  position: relative;
+  background-color: #303030;
+  margin: 0 0 8px;    
+}
+.faqs p{
+    text-align: center;
+    margin: 4rem 0 0.5rem 0; 
+}
+.faqs__wrapper {
+  position: relative;       
+}
+.question{
+  padding: 20px 30px;
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  position: relative;
+  border-bottom: solid 1.5px #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.answer {
+  padding: 20px 30px;
+  color: #fff;    
+  overflow: hidden;
+  display: none;
+}
+.faq.active .answer {
+  display: block;
+}
+.faq .icon{
+  transform: rotate(180deg);
+}
+
+.faq.active .icon {    
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}  
+.homepage__bottomsection{
+  border-bottom: 8px solid #222;
+}
+
+
+@media screen and (min-width:40em) {      
+   form{
+       flex-direction: row; 
+       max-width: 650px;
+       margin-inline: auto;    
+   }
+   form button{
+       margin-top: 0;
+       width: max-content;
+   }
+   form span{
+       top: 17px;
+   }
+   form div{
+       width: auto;
+       flex: 1;
+   }
+   .tabs__container{
+       width: 70%;
+   }
+   .tabs .top p{
+      padding-top: 1.5rem;
+      display: block;
+   }     
+
+    #tab-1-content,
+    #tab-2-content,
+    #tab-3-content {
+      padding-top: 1rem;
+    }
+      #tab-1-content .tab-1-content-inner {          
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #tab-2-content .tab-2-content-top { 
+        grid-template-columns: 2fr 1fr;         
+      }
+      #tab-2-content .tab-2-content-bottom {         
+        grid-template-columns: repeat(3, 1fr);                   
+      }
+
+    .more-text .container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);        
+      text-align: left;    
+    }
+    .more-text:nth-child(1) .container .texts{
+        grid-row: 1/2;
+    }
+    .table thead th{
+      padding: 0.8rem;
+    }
+    .table tbody tr td {        
+      padding: 0.8rem 1.2rem;
+      text-align: center;
+    }
+}
+
+
